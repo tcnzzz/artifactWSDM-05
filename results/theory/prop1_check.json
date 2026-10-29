@@ -1,0 +1,33 @@
+{
+ "n_instances": 2000,
+ "violations": {
+  "nonneg": 0,
+  "mono_left": 0,
+  "mono_right": 0,
+  "interval": 0,
+  "nested": 0,
+  "closed_form": 0
+ },
+ "synthetic_budget_mc": {
+  "0.05": {
+   "never": 10.213333333333333,
+   "always": 16.186666666666667,
+   "interval": 16.173333333333332
+  },
+  "0.2": {
+   "never": 10.03,
+   "always": 12.52,
+   "interval": 12.493333333333334
+  },
+  "0.5": {
+   "never": 10.07,
+   "always": 9.16,
+   "interval": 10.07
+  },
+  "1.0": {
+   "never": 10.153333333333334,
+   "always": 6.553333333333334,
+   "interval": 10.153333333333334
+  }
+ }
+}

@@ -1,0 +1,24 @@
+# sha256 of code and fitted models at freeze time
+frozen at 2026-10-06 22:34:11 +0700
+918c257b592edc87c4c58221c1c6916cd1886a09c03b5b5742343cd2bbf2409a  code/crawl.py
+ce094cbaff29eee718d1aa460e0fd244b53c1318ba4055564e9a07c73f12d1fb  code/run_policies.py
+dffc394d13ec723668c7bd570b2fe8909ca5c3edfa775f3970950f0335f54a0f  code/common.py
+75ffc7d4214dea902e2a5aeb557474bcab0c44b94c32f419fc4408520b7ce925  code/stats.py
+ef23e91217dbc12c53bd6382f790cf5d5cf4a7a136ac0ab525c78eb159689d37  code/fit_posterior.py
+ca42315cf0063b148b7e9ffa90392d5b631a8b241db83d8ad1f8332762a78ebd  code/fit_calib.py
+a238f4b2aae048d896f20537c73f92dcfb930f9c30c2fb69d127e5f068bdb973  data/models/encoder.txt
+4ca307f98a7928660ef0f50b2d8c9a000448c645bd2df018afc555d0ee2069b1  data/models/calib.pkl
+abdeacf5f643643017efe3bc7735e68ef19c96c2758f7d53f4f2b2d7f4741f0a  data/models/posterior.pkl
+60c719bd7792343abfd869c837c9e8c929ab207eb3e1149710974f09db5015f6  data/models/lambda.json
+7e69ed61cb9f674b8633f01a6f3edf32ba91607fa7a6ab9b6bab64d3e53c86c2  data/models_weak/calib.pkl
+ccfdc7f3a2dfd1feac15ef459571c675f71fdbb4487dafcf9996bc01325e5338  data/models_weak/posterior.pkl
+877e340a3fec376d6978839e9783e36bd1489ba4a6ad1b4c35a8ffbca3ac2467  data/models_weak/lambda.json
+a358214d3875fad9f3003e2a0ab1d7763fa024385c0723294a52a5e94cebe136  data/goals_test.jsonl
+fc504d71ff8f9e7999e1ea1fabaeff1106d2263bf5d6a3e8da2eb3b2688f8dcb  data/goals_val.jsonl
+4ffbce285c0d0c08113805d2aed659f2315d1355ab5ec1d0d9b51874c96dbd94  preregistration/ROUND1_PLAN.md
+35bcd88ca9cae99cff6c13fb69588296051ed233b892dc5692c11f66cec04a06  ../preregistration/ROUND1_PLAN.md
+c997d9b42b3572980a4a25238cf4c36b3951d27fd21a4c53f0531eb0f7924160  preregistration/ROUND1_PLAN.md (timestamps in the text corrected to the file times, 2026-10-06 22:54:07 +0700)
+cb34e9d663d8100bb9cd71b6c2baed65d2948aa6d3b74e0d054bc8c880cb31a7  preregistration/ROUND1_PLAN.md (amendment 2, 2026-10-06 23:06:00 +0700)
+c7fac69611602dffc0cb85e2696177feae6d2747ef9051648f74a906e02258bf  code/round1_test.sh (2026-10-06 23:06:00 +0700)
+62e9fe7e3897a17b81af8e7a876503bf42186e66119ea0159ef13e1589f5a568  code/round1_test.sh (log-file naming bug fixed, no change to runs; 2026-10-06 23:07:26 +0700)
+614063d55e9c272ae2a75bb6ffae1d454a6345c8d8d26d99049adfdd8f5bfe69  preregistration/round1_baselines.json  (written 2026-10-07 00:19:10 +0700)

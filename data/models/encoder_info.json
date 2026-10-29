@@ -1,0 +1,36 @@
+{
+ "kinds": [
+  "behav",
+  "index"
+ ],
+ "n_train_links": 720136,
+ "n_heldout_links": 78578,
+ "class_counts": [
+  8328,
+  13370,
+  15163,
+  683275
+ ],
+ "best_iter": 183,
+ "heldout_logloss": 0.1768987849293923,
+ "importance": {
+  "cos_anchor": 170705.8,
+  "cos_sent": 71494.8,
+  "cos_ptitle": 71977.1,
+  "cos_psent_max": 229550.4,
+  "cos_psent_mean": 75545.5,
+  "lex_q_in_anchor": 10132.2,
+  "lex_anchor_in_q": 16837.1,
+  "lex_q_in_sent": 90958.2,
+  "sent_idx": 37175.1,
+  "link_rank": 47584.3,
+  "n_links": 48809.5,
+  "parent_depth": 88406.8,
+  "par_cos_anchor": 144207.9,
+  "par_cos_sent": 68126.1,
+  "cos_anchor_ptitle": 103814.6,
+  "anchor_rank": 32879.8,
+  "anchor_gap": 83097.3,
+  "anchor_len": 21288.4
+ }
+}

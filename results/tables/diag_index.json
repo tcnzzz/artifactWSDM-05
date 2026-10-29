@@ -1,0 +1,18 @@
+{
+ "beta": 2.5846579129232894,
+ "frac_same_top_link": 0.9475,
+ "spearman_index_vs_pi1_mean": 0.7901988320232088,
+ "n_crawls": 1200,
+ "gateway_links": {
+  "n": 9994,
+  "mean_rank_pi1": 53.68220932559536,
+  "mean_rank_index": 52.799379627776666,
+  "frac_index_rank_better": 0.4491695017010206
+ },
+ "frac_links_commit_depth": {
+  "1": 0.11072557637443134,
+  "2": 0.07809006091448839,
+  "3": 0.8111843627110803
+ },
+ "n_links": 311256
+}

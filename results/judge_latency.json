@@ -1,0 +1,9 @@
+{
+ "calls": 17192,
+ "median_call_ms": 1924.41,
+ "mean_prompt_tokens": 92.245288506282,
+ "busy_minutes": 100,
+ "calls_per_busy_minute_median": 144.0,
+ "seconds_per_call_at_median_throughput": 0.4166666666666667,
+ "device": "Apple M5 Max (Metal), llama.cpp server from Ollama 0.30.8, 8 parallel slots, GPU shared with other users"
+}

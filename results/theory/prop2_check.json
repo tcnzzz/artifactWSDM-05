@@ -1,0 +1,35 @@
+{
+ "n_instances": 1500,
+ "n_breakpoints": 9887,
+ "violations": {
+  "order": 0,
+  "lagr": 0,
+  "budget": 0
+ },
+ "gateway_budget2": {
+  "0.3": {
+   "index_gateway": 0.49999999999999994,
+   "greedy_value": 0.3,
+   "index_value": 1.0,
+   "ratio": 3.3333333333333335
+  },
+  "0.1": {
+   "index_gateway": 0.49999999999999994,
+   "greedy_value": 0.1,
+   "index_value": 1.0,
+   "ratio": 10.0
+  },
+  "0.01": {
+   "index_gateway": 0.49999999999999994,
+   "greedy_value": 0.01,
+   "index_value": 1.0,
+   "ratio": 100.0
+  },
+  "0.001": {
+   "index_gateway": 0.49999999999999994,
+   "greedy_value": 0.001,
+   "index_value": 1.0,
+   "ratio": 1000.0
+  }
+ }
+}

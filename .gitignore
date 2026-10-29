@@ -1,0 +1,11 @@
+# not shipped: large or machine-local files
+.venv/
+venv/
+__pycache__/
+*.pyc
+logs/
+*.log
+data/raw/
+data/cache/
+data/graph/pages.sqlite
+.DS_Store

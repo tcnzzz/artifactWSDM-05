@@ -1,0 +1,6 @@
+{
+ "n_train_links": 720136,
+ "positives": 8328,
+ "best_iter": 197,
+ "heldout_logloss": 0.02986119229277876
+}

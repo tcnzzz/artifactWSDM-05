@@ -1,0 +1,10 @@
+{
+ "pages": 5233329,
+ "links_raw": 23392247,
+ "links_resolved": 19467768,
+ "edges_dedup": 19262362,
+ "out_degree_mean": 3.680709162370644,
+ "out_degree_median": 3.0,
+ "out_degree_p90": 7.0,
+ "pages_with_outlinks": 4808061
+}

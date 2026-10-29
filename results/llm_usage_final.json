@@ -1,0 +1,9 @@
+{
+ "distinct_judge_calls": 125278,
+ "prompt_tokens": 21348112,
+ "model": "qwen2.5:7b",
+ "table": "insp",
+ "covers": "distinct (model, question, parent, target) judgements cached across every run in the artifact, exploration and confirmatory, reused by all policies",
+ "note": "supersedes results/llm_usage.json (76,246 rows), which analyze.py wrote before the confirmatory crawls were judged; the saved numbers.tex already carries these final counts",
+ "cache_sha256": "db3cb7e4615cd298e68c07829c0d3514470f76d3b2d30f776c43f7d6f71f0223"
+}

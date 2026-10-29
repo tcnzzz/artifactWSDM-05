@@ -1,0 +1,6 @@
+{
+ "distinct_judge_calls": 76246,
+ "prompt_tokens": 13007757,
+ "model": "qwen2.5:7b",
+ "hosted_api_usd": 0.0
+}

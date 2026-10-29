@@ -1,0 +1,7 @@
+{
+ "n": 300,
+ "argmax_agreement": 1.0,
+ "mean_abs_diff_expected_rating": 0.00030123785485086283,
+ "pearson_expected_rating": 0.999988543998513,
+ "max_abs_diff_expected_rating": 0.005427964045471856
+}

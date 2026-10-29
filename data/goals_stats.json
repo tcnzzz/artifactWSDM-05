@@ -1,0 +1,8 @@
+{
+ "dev_candidates": 5360,
+ "test": 400,
+ "train_candidates_sampled": 8714,
+ "val": 150,
+ "cal": 400,
+ "train": 771
+}
