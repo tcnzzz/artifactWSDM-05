@@ -1,0 +1,298 @@
+{
+ "config": {
+  "blocks": [
+   80,
+   120,
+   160
+  ],
+  "questions": 120,
+  "budget": 25,
+  "note": "diagnostic on completed confirmatory blocks; no new judge call"
+ },
+ "cells": {
+  "trained": {
+   "0.1": {
+    "rho": 0.1,
+    "scorer": {
+     "recall": 0.7763888888888889
+    },
+    "ours": {
+     "n_crawls": 360,
+     "calls": 5.527777777777778,
+     "max_calls": 30,
+     "insp": 1990,
+     "insp_fetched": 1029,
+     "insp_skip": 961,
+     "frac_fetched": 0.5170854271356784,
+     "frac_saved": 0.4829145728643216,
+     "frac_gold": 0.010552763819095477,
+     "frac_on_path": 0.09396984924623115,
+     "fetch_per_crawl": 24.041666666666668,
+     "recall": 0.7763888888888889,
+     "n": 360,
+     "nq": 120
+    },
+    "topm": {
+     "n_crawls": 360,
+     "calls": 18.261111111111113,
+     "max_calls": 22,
+     "insp": 6574,
+     "insp_fetched": 5482,
+     "insp_skip": 1092,
+     "frac_fetched": 0.8338910860967448,
+     "frac_saved": 0.16610891390325525,
+     "frac_gold": 0.0725585640401582,
+     "frac_on_path": 0.2029205962884089,
+     "fetch_per_crawl": 22.944444444444443,
+     "recall": 0.7736111111111111,
+     "n": 360,
+     "nq": 120
+    },
+    "thompson": {
+     "n_crawls": 360,
+     "calls": 33.87777777777778,
+     "max_calls": 53,
+     "insp": 12196,
+     "insp_fetched": 7582,
+     "insp_skip": 4614,
+     "frac_fetched": 0.6216792390947852,
+     "frac_saved": 0.3783207609052148,
+     "frac_gold": 0.047146605444408005,
+     "frac_on_path": 0.15234503115775663,
+     "fetch_per_crawl": 21.22222222222222,
+     "recall": 0.7708333333333334,
+     "n": 360,
+     "nq": 120
+    },
+    "band": {
+     "n_crawls": 360,
+     "calls": 18.255555555555556,
+     "max_calls": 58,
+     "insp": 6572,
+     "insp_fetched": 3561,
+     "insp_skip": 3011,
+     "frac_fetched": 0.5418441874619598,
+     "frac_saved": 0.45815581253804016,
+     "frac_gold": 0.012477175897748022,
+     "frac_on_path": 0.10483870967741936,
+     "fetch_per_crawl": 22.769444444444446,
+     "recall": 0.7666666666666667,
+     "n": 360,
+     "nq": 120
+    }
+   },
+   "1": {
+    "rho": 1.0,
+    "scorer": {
+     "recall": 0.7763888888888889
+    },
+    "ours": {
+     "n_crawls": 360,
+     "calls": 0.0,
+     "max_calls": 0,
+     "insp": 0,
+     "insp_fetched": 0,
+     "insp_skip": 0,
+     "frac_fetched": 0.0,
+     "frac_saved": 0.0,
+     "frac_gold": 0.0,
+     "frac_on_path": 0.0,
+     "fetch_per_crawl": 25.0,
+     "recall": 0.7763888888888889,
+     "n": 360,
+     "nq": 120
+    },
+    "topm": {
+     "n_crawls": 360,
+     "calls": 0.0,
+     "max_calls": 0,
+     "insp": 0,
+     "insp_fetched": 0,
+     "insp_skip": 0,
+     "frac_fetched": 0.0,
+     "frac_saved": 0.0,
+     "frac_gold": 0.0,
+     "frac_on_path": 0.0,
+     "fetch_per_crawl": 25.0,
+     "recall": 0.7763888888888889,
+     "n": 360,
+     "nq": 120
+    },
+    "thompson": {
+     "n_crawls": 360,
+     "calls": 12.680555555555555,
+     "max_calls": 16,
+     "insp": 4565,
+     "insp_fetched": 4199,
+     "insp_skip": 366,
+     "frac_fetched": 0.9198247535596933,
+     "frac_saved": 0.08017524644030669,
+     "frac_gold": 0.10295728368017525,
+     "frac_on_path": 0.25958378970427165,
+     "fetch_per_crawl": 12.319444444444445,
+     "recall": 0.6555555555555556,
+     "n": 360,
+     "nq": 120
+    },
+    "band": {
+     "n_crawls": 360,
+     "calls": 6.572222222222222,
+     "max_calls": 20,
+     "insp": 2366,
+     "insp_fetched": 1667,
+     "insp_skip": 699,
+     "frac_fetched": 0.7045646661031276,
+     "frac_saved": 0.2954353338968724,
+     "frac_gold": 0.022400676246830092,
+     "frac_on_path": 0.14074387151310228,
+     "fetch_per_crawl": 18.427777777777777,
+     "recall": 0.725,
+     "n": 360,
+     "nq": 120
+    }
+   }
+  },
+  "zeroshot": {
+   "0.1": {
+    "rho": 0.1,
+    "scorer": {
+     "recall": 0.42916666666666664
+    },
+    "ours": {
+     "n_crawls": 360,
+     "calls": 23.252777777777776,
+     "max_calls": 62,
+     "insp": 8371,
+     "insp_fetched": 2160,
+     "insp_skip": 6211,
+     "frac_fetched": 0.25803368773145385,
+     "frac_saved": 0.7419663122685461,
+     "frac_gold": 0.006809222315135587,
+     "frac_on_path": 0.04312507466252539,
+     "fetch_per_crawl": 22.294444444444444,
+     "recall": 0.44027777777777777,
+     "n": 360,
+     "nq": 120
+    },
+    "topm": {
+     "n_crawls": 360,
+     "calls": 43.388888888888886,
+     "max_calls": 80,
+     "insp": 15620,
+     "insp_fetched": 6970,
+     "insp_skip": 8650,
+     "frac_fetched": 0.44622279129321385,
+     "frac_saved": 0.5537772087067862,
+     "frac_gold": 0.023175416133162614,
+     "frac_on_path": 0.07234314980793854,
+     "fetch_per_crawl": 20.31388888888889,
+     "recall": 0.4791666666666667,
+     "n": 360,
+     "nq": 120
+    },
+    "thompson": {
+     "n_crawls": 360,
+     "calls": 42.175,
+     "max_calls": 66,
+     "insp": 15183,
+     "insp_fetched": 7287,
+     "insp_skip": 7896,
+     "frac_fetched": 0.47994467496542187,
+     "frac_saved": 0.5200553250345782,
+     "frac_gold": 0.022656918922479088,
+     "frac_on_path": 0.07159322926957781,
+     "fetch_per_crawl": 20.397222222222222,
+     "recall": 0.4486111111111111,
+     "n": 360,
+     "nq": 120
+    },
+    "band": {
+     "n_crawls": 360,
+     "calls": 59.74722222222222,
+     "max_calls": 110,
+     "insp": 21509,
+     "insp_fetched": 6616,
+     "insp_skip": 14893,
+     "frac_fetched": 0.3075921707192338,
+     "frac_saved": 0.6924078292807662,
+     "frac_gold": 0.01659770328699614,
+     "frac_on_path": 0.05969594123390209,
+     "fetch_per_crawl": 18.694444444444443,
+     "recall": 0.4708333333333333,
+     "n": 360,
+     "nq": 120
+    }
+   },
+   "1": {
+    "rho": 1.0,
+    "scorer": {
+     "recall": 0.42916666666666664
+    },
+    "ours": {
+     "n_crawls": 360,
+     "calls": 4.783333333333333,
+     "max_calls": 15,
+     "insp": 1722,
+     "insp_fetched": 777,
+     "insp_skip": 945,
+     "frac_fetched": 0.45121951219512196,
+     "frac_saved": 0.5487804878048781,
+     "frac_gold": 0.013937282229965157,
+     "frac_on_path": 0.05807200929152149,
+     "fetch_per_crawl": 20.216666666666665,
+     "recall": 0.4125,
+     "n": 360,
+     "nq": 120
+    },
+    "topm": {
+     "n_crawls": 360,
+     "calls": 0.0,
+     "max_calls": 0,
+     "insp": 0,
+     "insp_fetched": 0,
+     "insp_skip": 0,
+     "frac_fetched": 0.0,
+     "frac_saved": 0.0,
+     "frac_gold": 0.0,
+     "frac_on_path": 0.0,
+     "fetch_per_crawl": 25.0,
+     "recall": 0.42916666666666664,
+     "n": 360,
+     "nq": 120
+    },
+    "thompson": {
+     "n_crawls": 360,
+     "calls": 13.244444444444444,
+     "max_calls": 18,
+     "insp": 4768,
+     "insp_fetched": 4018,
+     "insp_skip": 750,
+     "frac_fetched": 0.8427013422818792,
+     "frac_saved": 0.1572986577181208,
+     "frac_gold": 0.05725671140939597,
+     "frac_on_path": 0.12017617449664429,
+     "fetch_per_crawl": 11.755555555555556,
+     "recall": 0.375,
+     "n": 360,
+     "nq": 120
+    },
+    "band": {
+     "n_crawls": 360,
+     "calls": 4.427777777777778,
+     "max_calls": 16,
+     "insp": 1594,
+     "insp_fetched": 797,
+     "insp_skip": 797,
+     "frac_fetched": 0.5,
+     "frac_saved": 0.5,
+     "frac_gold": 0.018820577164366373,
+     "frac_on_path": 0.06963613550815559,
+     "fetch_per_crawl": 20.572222222222223,
+     "recall": 0.4166666666666667,
+     "n": 360,
+     "nq": 120
+    }
+   }
+  }
+ }
+}

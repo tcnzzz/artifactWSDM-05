@@ -2,9 +2,9 @@
 
 Budgeted focused crawling where every frontier link can be fetched blind (cost 1), inspected by
 an LLM judge first (cost rho), or left alone, with links appearing only after their parent page
-is fetched. Everything in the paper is produced by the scripts here from the raw run files in
-`results/`. Data provenance and checksums are in `DATA.md`, proofs and numeric checks in
-`PROOFS.md`.
+is fetched. Everything in the paper is produced by the scripts here from the saved runs and saved
+result files in `results/`. Data provenance and checksums are in `DATA.md`, proofs and numeric
+checks in `PROOFS.md`.
 
 ## Layout
 - `code/download_dump.sh`, `code/build_graph.py`: Wikipedia intro-paragraph link graph (5.2M pages).
@@ -20,6 +20,10 @@ is fetched. Everything in the paper is produced by the scripts here from the raw
 - `code/check_prop1.py`, `code/check_prop2.py`: numeric checks of the propositions.
 - `code/train_binary_head.py`: strictly myopic scorer (binary head) for the Proposition 2 test.
 - `code/diag_index_vs_myopic.py`, `code/diag_redundancy.py`: diagnostics of the gateway null and of route redundancy.
+- `code/gateway_synth.py`: exploratory synthetic-tree mechanism check for the gateway condition;
+  writes `results/theory/gateway_synth.json` and is read only by the numbers step.
+- `code/sensitivity.py`: exploratory sensitivity of the escalation region to lambda/rho and a
+  budget-truncation boundary check; writes `results/exploratory/sensitivity.json`.
 - `code/fidelity_check.py`: agreement of the two serving paths of the judge (same model file).
 - Stages, in order: `code/pipeline_train.sh`, `code/stage_nollm.sh`, `code/pipeline_val.sh`,
   `code/pipeline_weak.sh` (zero-shot scorer regime), `code/pipeline_test.sh`, `code/pipeline_test_weak.sh`,
@@ -48,18 +52,10 @@ deterministic and free. Seeds: goal construction 20261005, encoder 0, bootstrap 
 `code/round1_confirm.py` analyses the saved confirmatory runs (test questions 80-199 only) into
 `results/tables/round1_confirm.json`; `code/inventory_runs.py` writes the per-cell crawl inventory
 `results/tables/inventory.json`; `code/make_fig_confirm.py` draws Figure 1 from
-`round1_confirm.json`; `code/make_numbers_and_table.py` turns the round-0 numbers
-(`manuscript/numbers.tex`, produced by `analyze.py`) plus `round1_confirm.json` into the single active
-numbers file `manuscript/numbers_all.tex` and the table `manuscript/sections/tab_r1.tex`.
+`round1_confirm.json`; `code/gateway_synth.py` writes the exploratory synthetic check
+`results/theory/gateway_synth.json`; `code/make_numbers_and_table.py` turns the round-0 numbers
+(`manuscript/numbers_wsl_regenerated.tex`, the WSL output of `analyze.py`; the saved macOS
+`numbers.tex` is kept for provenance) plus `round1_confirm.json` and `gateway_synth.json` into the
+single active numbers file `manuscript/numbers_all.tex` and the table `manuscript/sections/tab_r1.tex`.
 `MANIFEST.md` maps every macro used by the paper to its script and saved result. The paper builds with
 `cd manuscript && latexmk -pdf main.tex`; no run file, log or frozen hash is written by these steps.
-
-## What this repository does not contain
-
-The raw Wikipedia dump (1.5 GB), the link-graph SQLite (2.7 GB), the judge response cache (0.9 GB)
-and the server logs (4 GB) are not tracked; see `.gitignore`. `code/download_dump.sh` and
-`code/build_graph.py` rebuild the first two from the public source recorded in `DATA.md` (with its
-SHA-256), and the saved run files contain every fetch and judge event, so all reported numbers are
-recomputable without the cache. The manuscript source is not part of this repository: `analyze.py`
-and `make_numbers_and_table.py` expect a sibling `manuscript/` directory to write the generated
-number and table files into, and every input they read is in this repository.

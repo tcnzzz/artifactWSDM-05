@@ -70,3 +70,25 @@ def auc_section():
     s.append("contained cell macros, and `results/tables/round1.json` has empty cell blocks. The table is\n")
     s.append("therefore computed anew from the saved run files of blocks 80-199, not a re-run of a saved value.\n")
     return "".join(s)
+
+
+def beta_section():
+    """Reproducibility caveat for the frozen beta, from the saved level-shift diagnostic."""
+    fn = os.path.join(ART, "results", "exploratory", "level_shift.json")
+    if not os.path.exists(fn):
+        return ""
+    d = json.load(open(fn))
+    b = d["beta"]
+    s = []
+    s.append("\n## Beta regeneration caveat\n\n")
+    s.append("`data/models/calib.pkl` stores beta = "
+             f"{b['deployed']:.10f}. Refitting `code/fit_calib.py index_B` on the saved\n")
+    s.append("`data/rows/cal_index_B_s*.pkl` (byte-identical to the 2026-10-29 backup) gives\n")
+    s.append(f"{b['full']:.4f} with the default `numpy.argsort` and {b['full_stable']:.4f} with a stable sort;\n")
+    s.append(f"n_links = {d['n_links']['full']:,} and n_pages_for_beta = {d['n_pages_for_beta']['full']} match the\n")
+    s.append("stored fit, and the isotonic curves agree at the fitted quantiles. The gap is tie-breaking in\n")
+    s.append("the rank statistic (many links share the same index), which is platform-dependent, not row drift.\n")
+    s.append("All saved runs and every paper number use the frozen beta and are unaffected; off-platform\n")
+    s.append("regeneration will give a slightly different beta unless the original platform's sort order is\n")
+    s.append("reproduced. Diagnostic: `code/level_shift.py` -> `results/exploratory/level_shift.json`.\n")
+    return "".join(s)

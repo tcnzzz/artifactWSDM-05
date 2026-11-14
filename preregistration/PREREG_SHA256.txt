@@ -1,9 +1,0 @@
-# Preregistration copy: byte-for-byte identical to the originals
-
-These three files were copied without modification from `artifact/preregistration/` of the
-submitted artifact. `sha256sum` of each file in this directory equals the original; the only file
-added is this hash list. No rule, baseline or plan text was edited for the supplement.
-
-cb34e9d663d8100bb9cd71b6c2baed65d2948aa6d3b74e0d054bc8c880cb31a7  ROUND1_PLAN.md
-614063d55e9c272ae2a75bb6ffae1d454a6345c8d8d26d99049adfdd8f5bfe69  round1_baselines.json
-a452d2570272f9b27fae35160da73d160a2e2bc9180188eb3c45bd3122e737af  round1_rule_hashes.txt

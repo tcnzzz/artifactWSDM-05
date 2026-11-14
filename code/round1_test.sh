@@ -2,7 +2,7 @@
 # Round 1 confirmatory runs on test questions 80..399 (never run with a judge before), in blocks of 40 questions in file
 # order. Each block runs every cell (both regimes, rho in {0.1, 1}, scorer alone, TwoCost, band, top-m, Thompson over links).
 # No new block starts after the deadline in ../preregistration/ROUND1_PLAN.md (Amendment 2). Resumable.
-set -e; cd "$(dirname "$0")"; PY=../venv/bin/python; L=../logs; B=25; DEADLINE=${DEADLINE:-202610071600}
+set -e; cd "$(dirname "$0")"; PY=${PY:-../venv/bin/python}; L=../logs; B=25; DEADLINE=${DEADLINE:-202610071600}
 [ -f ../preregistration/round1_baselines.json ] || { echo "baselines not frozen"; exit 1; }
 par() { N=${NSH:-12}; for s in $(seq 0 $((N-1))); do $PY run_policies.py "$@" --shard $s/$N > $L/r1t_$(echo "$@" | cksum | cut -d" " -f1)_$s.log 2>&1 & done; wait; }
 cfg() { $PY -c "import json;c=json.load(open('../preregistration/round1_baselines.json'))['$1']['$2']['$3']['best'];print(json.dumps(c))"; }

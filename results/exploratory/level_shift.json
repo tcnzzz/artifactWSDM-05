@@ -1,0 +1,65 @@
+{
+ "kind": "index_B",
+ "note": "Exploratory. The full-row refit on WSL gives beta 2.5473/2.5660 depending on the argsort tie order, not the frozen 2.5847; the isotonic curves and rows match, so the gap is tie-breaking in the rank statistic, not data drift. Saved runs and paper numbers use the frozen beta and are unaffected. The level comparison uses the refit full as its baseline; run the same fit on the original platform before quoting it.",
+ "n_questions": {
+  "full": 400,
+  "hard": 65
+ },
+ "n_rows": {
+  "full": 1200,
+  "hard": 195
+ },
+ "n_links": {
+  "full": 310397,
+  "hard": 50788
+ },
+ "base_rates": {
+  "full": [
+   0.007000711991417443,
+   0.019004693988666128,
+   0.03694623337210089
+  ],
+  "hard": [
+   0.007127667953059778,
+   0.017681342049302985,
+   0.035067338741434986
+  ]
+ },
+ "auc_R1": {
+  "full": 0.9802400448803115,
+  "hard": 0.9776511579902765
+ },
+ "auc_R3": {
+  "full": 0.873056447315078,
+  "hard": 0.857731601830203
+ },
+ "beta": {
+  "full": 2.5473393227366965,
+  "hard": 2.371794871794872,
+  "full_stable": 2.565998617829993,
+  "hard_stable": 2.4017094017094016,
+  "deployed": 2.5846579129232894
+ },
+ "n_pages_for_beta": {
+  "full": 1447,
+  "hard": 234
+ },
+ "median_rank": {
+  "full": 1.0,
+  "hard": 1.0
+ },
+ "lambda_hard": {
+  "full": {
+   "lam": 0.01525,
+   "n": 450,
+   "q25": 0.007895,
+   "q75": 0.02892
+  },
+  "hard": {
+   "lam": 0.01527,
+   "n": 87,
+   "q25": 0.006665,
+   "q75": 0.02892
+  }
+ }
+}

@@ -80,3 +80,11 @@ controlled factor and is labelled as such in the paper.
   `results/`): `llama3.1:8b` under the same prompt.
 - Software: Python 3.13, numpy 2.5.3, scipy 1.18.1, scikit-learn 1.9.1, lightgbm 4.7.0,
   torch 2.14.1, sentence-transformers 6.1.0, transformers 5.18.0.
+- Reproducibility caveat (beta): `data/models/calib.pkl` stores beta = 2.5846579129232894.
+  Refitting `code/fit_calib.py index_B` on the saved `data/rows/cal_index_B_s*.pkl` (byte-identical
+  to the 2026-10-29 backup) gives 2.5473 with the default `numpy.argsort` and 2.5660 with a stable
+  sort; n_links (310,397) and n_pages_for_beta (1,447) match the stored fit, and the isotonic curves
+  agree at the fitted quantiles. The gap is tie-breaking in the rank statistic, which is
+  platform-dependent, not row drift. All saved runs and paper numbers use the frozen beta;
+  off-platform regeneration will give a slightly different beta unless the original sort order is
+  reproduced. Diagnostic: `code/level_shift.py` -> `results/exploratory/level_shift.json`.
